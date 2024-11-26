@@ -1,9 +1,15 @@
 package mwtest
 
-import (
-	"fmt"
-)
+type Game struct {
+	players []*Player
+	spawns  []vec2
+	board   *Board
+}
 
-func Game() {
-	fmt.Println("Game")
+type GameContext struct {
+	exitLoc vec2
+}
+
+func NewGame(gameConfigFile string) *Game {
+	return nil
 }
